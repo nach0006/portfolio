@@ -1,1 +1,124 @@
+body {
+  padding: 3rem;
+  background-color: var(--beige);
+}
+
+/* colors */
+:root {
+  --beige: #f3f2ee;
+  --dark_beige: #e1dbcd;
+  --turquoise: #6e9594;
+  --black: #212622;
+}
+
 /* fonts  */
+h1 {
+  font-family: adobe-handwriting-ernie, sans-serif;
+  font-size: 7rem;
+}
+
+h2 {
+  font-family: "the-seasons", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h3 {
+  font-family: "the-seasons", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+h4 {
+  font-family: adobe-handwriting-ernie, sans-serif;
+  font-size: 2rem;
+}
+
+p {
+  font-family: "century-gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  font-family: "the-seasons", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* menu */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  padding-bottom: 1rem;
+}
+
+/* .logo {
+} */
+
+.nav {
+  position: relative;
+}
+
+.menu {
+  display: flex;
+  gap: 56px;
+  list-style: none;
+  margin: 0;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--black);
+  font-size: 1rem;
+  /* transition: font-family 2s; */
+}
+
+.menu a:hover {
+  font-family: adobe-handwriting-ernie, sans-serif;
+  font-size: 0.8rem;
+}
+
+.menu a.active {
+  color: var(--turquoise);
+}
+
+/* burger menu */
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 25px;
+  height: 3px;
+  background-color: var(--black);
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    background-color: #f8f8f8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .burger {
+    display: flex;
+  }
+}

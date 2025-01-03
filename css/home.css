@@ -1,0 +1,15 @@
+h1,
+.section1 {
+  display: grid;
+  text-align: center;
+}
+
+h2,
+h4,
+p {
+  margin: 0;
+}
+
+section {
+  margin-top: 24rem;
+}

@@ -9,12 +9,19 @@
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="https://use.typekit.net/miy6xkr.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <!-- <script src="lottie" type="module"></script> -->
     <header>
-        <div class="logo">My Logo</div>
+        <div class="logo">
+            <a href="/">
+                <img src="img/logo.webp" alt="Logo">
+            </a>
+        </div>
         <nav class="nav">
             <ul class="menu">
                 <li><a href="home.html">Home</a></li>
@@ -25,6 +32,7 @@
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
+                <span class="cross-icon">X</span>
             </div>
         </nav>
     </header>
@@ -38,17 +46,61 @@
             <p>Here, you'll find my latest projects, learn about my design journey, and discover more about me as a
                 current multimediadesigner in KEA.
             </p>
-            <a href=""></a>
+            <a class="grow" href="about_me.html">Read more about me</a>
         </section>
         <section>
-            <h2>Go to...</h2>
-            <a href="portfolio.html"></a>
-            <a href="about_me.html"></a>
+            <div>
+                <h2>Go to...</h2>
+                <div class="grid_1-1">
+                    <a href="portfolio.html" class="gotopage">
+                        <img src="img/3_about_me/funny.webp" alt="my_work" class="image">
+                        <div class="overlay">
+                            <div class="text">my work</div>
+                        </div>
+                    </a>
+                    <a href="about_me.html" class="gotopage">
+                        <img src="img/3_about_me/portrait.webp" alt="my_work" class="image">
+                        <div class="overlay">
+                            <div class="text">about me</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-
+        <h1>Have any questions?</h1>
+        <div class="grid_2-1">
+            <div>
+                <h2>Feel free to reach out on...</h2>
+                <div class="contact-items">
+                    <div>
+                        <div>
+                            <a href="mailto:nadiamartinchristiansen@gmail.com" class="contact">
+                                <i class="fa-solid fa-envelope"></i>
+                                <p>gmail: nadiamartinchristiansen@gmail.com</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.linkedin.com/in/nadia-mart%C3%ADn-christiansen" class="contact">
+                                <i class="fa-brands fa-linkedin"></i>
+                                <p>linkedin: Nadia Martín Christiansen</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <h2>Or go to page...</h2>
+                <div class="gotopage-items">
+                    <a class="page" href="home.html">Home</a>
+                    <a class="page" href="portfolio.html">My Work</a>
+                    <a class="page" href="about_me.html">About Me</a>
+                </div>
+            </div>
+        </div>
+        <p class="message">Designed with looove by Nadia</p>
     </footer>
 
     <script src="java/menu.js"></script>

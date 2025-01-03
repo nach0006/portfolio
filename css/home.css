@@ -1,7 +1,8 @@
-h1,
+main h1,
 .section1 {
   display: grid;
   text-align: center;
+  justify-items: center;
 }
 
 h2,
@@ -10,6 +11,53 @@ p {
   margin: 0;
 }
 
-section {
-  margin-top: 24rem;
+/* button "read more about me" */
+.section1 a {
+  text-decoration: none;
+  font-style: italic;
+  color: var(--black);
+  background-color: var(--dark_beige);
+  width: fit-content;
+  padding: 0.6rem;
+  margin-top: 1.3rem;
+}
+
+/* section 2 */
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 55px;
+}
+
+.gotopage {
+  margin-top: 2rem;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: var(--dark_beige);
+}
+
+.gotopage:hover .overlay {
+  opacity: 0.8;
+}
+
+.text {
+  color: var(--beige);
+  text-transform: uppercase;
+  font-size: 3cqw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }

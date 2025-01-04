@@ -11,17 +11,6 @@ p {
   margin: 0;
 }
 
-/* button "read more about me" */
-.section1 a {
-  text-decoration: none;
-  font-style: italic;
-  color: var(--black);
-  background-color: var(--dark_beige);
-  width: fit-content;
-  padding: 0.6rem;
-  margin-top: 1.3rem;
-}
-
 /* section 2 */
 .grid_1-1 {
   display: grid;

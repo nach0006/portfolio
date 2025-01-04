@@ -5,22 +5,259 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my work</title>
-    <link rel="stylesheet" href="css/general.csss">
+    <link rel="shortcut icon" href="img/logo.webp" type="image/x-icon">
+    <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="https://use.typekit.net/miy6xkr.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    <a id="#top"></a>
     <header>
-
+        <a href="#top" class="favicon grow">
+            <img src="img/logo.webp" alt="Logo">
+        </a>
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="home.html">home</a></li>
+                <li><a href="portfolio.html">my work</a></li>
+                <li><a href="about_me.html">about Me</a></li>
+            </ul>
+            <div class="burger" id="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <span class="cross-icon">X</span>
+            </div>
+        </nav>
     </header>
 
     <main>
+        <section class="section1">
+            <h1>My work</h1>
+            <div class="grid_1-1">
+                <div>
+                    <a href="#tema1" class="goto grow">
+                        <h2>Tema 1 - intro week</h2>
+                    </a>
+                    <a href="#tema2" class="goto grow">
+                        <h2>Tema 2 - web</h2>
+                    </a>
+                    <a href="#tema3" class="goto grow">
+                        <h2>Tema 3 - UX</h2>
+                    </a>
+                </div>
+                <div class="tema4-5">
+                    <a href="#tema4" class="goto grow">
+                        <h2>Tema 4 - animation</h2>
+                    </a>
+                    <a href="#tema5" class="goto grow">
+                        <h2>Tema 5 - content</h2>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="tema1">
+            <h2>1. Introduction week</h2>
+            <div class="grid_1-1">
+                <div>
+                    <h3>Kea's next designer</h3>
+                    <p>Together with my group, we created a video project that showcased our teamwork and
+                        creativity.
+                        <br><br>
+                        This experience strengthened our communication skills and prepared us for future
+                        collaborative
+                        challenges.
+                    </p>
+                    <a class="button grow" href="https://youtu.be/GqJU9XEyIHM">Click here</a>
+                </div>
+                <video controls width="400" class="grow">
+                    <source src="video/keas-næste-designer---team-7.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
 
+        <section class="grid_1-1" id="tema2">
+            <div>
+                <h2>2. Web</h2>
+                <p>In this theme, we focused on learning essential tools for multimedia design.</p>
+                <h3>Study start test</h3>
+                <p>The main project was creating a website using HTML and CSS. While the text, images, and layout were
+                    provided, we applied
+                    our own design decisions within the given framework. <br><br>
+                    This project introduced me to coding, responsive web design, and digital content creation, laying
+                    the groundwork for future multimedia projects.
+                </p>
+                <a class="button grow" href="https://nadiamc.dk/kea/02_web/01_website/website/index.html">Click here</a>
+            </div>
+            <div class="left">
+                <a href="https://nadiamc.dk/kea/02_web/01_website/website/index.html">
+                    <img class="horizontal_img grow" src="img/02_portfolio/02_website-h.webp" alt="Study start test">
+                    <img class="vertical_img grow" src="img/02_portfolio/02_website-v.webp" alt="Study start test">
+                </a>
+            </div>
+        </section>
+
+        <section class="grid_1-1" id="tema3">
+            <div>
+                <h2>3. UX</h2>
+                <p>This theme introduced me to the fundamentals of UX design, focusing on the interaction between users
+                    and digital interfaces.
+                </p>
+                <h3>Topic website</h3>
+                <p>For the main project, I designed a topic-based website using user-centered design principles. This
+                    process included
+                    research, prototyping, and usability testing to ensure the final product met user needs and
+                    expectations. <br><br>
+                    This project provided my first insight into the structure of the first-semester exam, as it involved
+                    not
+                    only creating a
+                    website but also presenting the design process, user insights, and final product to an audience. It
+                    served as valuable
+                    preparation for future projects and assessments.
+                </p>
+                <a class="button grow" href="https://nadiamc.dk/kea/03_ux/emnesite/ ">Click here</a>
+            </div>
+            <div class="right">
+                <a href="https://nadiamc.dk/kea/03_ux/emnesite/ ">
+                    <img class="horizontal_img grow" src="img/02_portfolio/03_emnesite-h.webp" alt="Topic website">
+                    <img class="vertical_img grow" src="img/02_portfolio/03_emnesite-v.webp" alt="Topic website">
+                </a>
+            </div>
+        </section>
+
+        <section class="grid_1-1" id="tema4">
+            <div>
+                <h2>4. Animation</h2>
+                <h3>Game website</h3>
+                <p>In this theme, I learned JavaScript and CSS animations to create the Splash Sprint game. I designed
+                    and coded game elements, focusing on collecting "good" items and avoiding "bad" ones, earning points
+                    and losing
+                    lives. I used Adobe Illustrator for graphics, CSS for animation, and JavaScript for game logic.
+                    <br><br>
+
+                    This project also introduced activity and state machine diagrams to plan the interactive flow. It
+                    enhanced my skills in
+                    frontend technologies, sound integration, and creating interactive experiences.
+                </p>
+                <a class="button grow" href="http://nadiamc.dk/kea/04_animation/website/index.html">Click here</a>
+            </div>
+            <div class="left">
+                <a href="http://nadiamc.dk/kea/04_animation/website/index.html">
+                    <img class="horizontal_img grow" src="img/02_portfolio/04_spilsite-h.webp" alt="Topic website">
+                    <img class="vertical_img grow" src="img/02_portfolio/04_spilsite-v.webp" alt="Topic website">
+                </a>
+            </div>
+        </section>
+
+        <section id="tema5">
+            <h2>5. Content</h2>
+            <div class="tema5">
+                <div class="grid_1-1">
+                    <div class="left">
+                        <a href="http://nadiamc.dk/kea/05_indhold/01_passionsite/index.html">
+                            <img class="horizontal_img grow" src="img/02_portfolio/05_passionsite-h.webp"
+                                alt="Topic website">
+                            <img class="vertical_img grow" src="img/02_portfolio/05_passionsite-v.webp"
+                                alt="Topic website">
+                        </a>
+                    </div>
+
+                    <div>
+                        <h3>Passion website</h3>
+                        <p>I created a passion site that showcases a person and their interests. Using Adobe Premiere
+                            Pro
+                            and
+                            Audition, I produced video content and combined it with photography. <br><br>
+
+                            The project involved pre-production planning, shooting with a smartphone and external
+                            microphone,
+                            and editing the video. I also applied techniques for creating animated graphics and
+                            optimized
+                            the
+                            layout using the skills I learned from previous themes. <br><br>
+
+                            This project allowed me to explore content creation, organization, and video editing,
+                            helping me
+                            communicate a subject's passion effectively.
+                        </p>
+                        <a class="button grow" href="http://nadiamc.dk/kea/05_indhold/01_passionsite/index.html">Click
+                            here</a>
+                    </div>
+                </div>
+                <div class="grid_1-1">
+                    <div class="right">
+                        <a href="https://nadiamc.dk/kea/05_indhold/02_virksomhedssite/vaerksted_v2/index.html">
+                            <img class="horizontal_img grow" src="img/02_portfolio/05_virksomhedssite-h.webp"
+                                alt="Topic website">
+                            <img class="vertical_img grow" src="img/02_portfolio/05_virksomhedssite-v.webp"
+                                alt="Topic website">
+                        </a>
+                    </div>
+                    <div>
+                        <h3>Business website</h3>
+                        <p>I worked in a group to redesign a website for a company. This project closely resembled the
+                            structure
+                            of the upcoming exam, focusing on redesigning a business site with new text, photos,
+                            animations,
+                            and
+                            videos.<br><br>
+
+                            We applied content production principles to the business context, ensuring the website was
+                            user-friendly and engaging. I applied my skills in Adobe Premiere Pro, Photoshop, After
+                            Effects,
+                            and
+                            frontend development tools like HTML, CSS, and JavaScript to optimize the site's design and
+                            functionality. <br><br>
+
+                            The process gave me valuable experience in project organization, team collaboration, and
+                            applying a
+                            structured design approach in a real-world context.
+                        </p>
+                        <a class="button grow"
+                            href="https://nadiamc.dk/kea/05_indhold/02_virksomhedssite/vaerksted_v2/index.html">Click
+                            here</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-
+        <h1>Have any questions?</h1>
+        <div class="grid_2-1">
+            <div>
+                <h2>Feel free to contact me</h2>
+                <div class="contact-items">
+                    <div>
+                        <div>
+                            <a href="mailto:nadiamartinchristiansen@gmail.com" class="contact">
+                                <i class="fa-solid fa-envelope"></i>
+                                <p>gmail: nadiamartinchristiansen@gmail.com</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.linkedin.com/in/nadia-mart%C3%ADn-christiansen" class="contact">
+                                <i class="fa-brands fa-linkedin"></i>
+                                <p>linkedin: Nadia Martín Christiansen</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <h2>Or go to page...</h2>
+                <div class="gotopage-items">
+                    <a class="page" href="home.html">Home</a>
+                    <a class="page" href="portfolio.html">My Work</a>
+                    <a class="page" href="about_me.html">About Me</a>
+                </div>
+            </div>
+        </div>
+        <p class="message">Designed with looove by Nadia</p>
     </footer>
 
     <script src="java/menu.js"></script>

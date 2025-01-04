@@ -6,13 +6,19 @@ img {
   border-radius: 5px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--beige);
   padding: 3rem;
   margin: 4cqw;
 }
 
-section,
+section {
+  padding-top: 15rem;
+}
 footer {
   margin-top: 15rem;
 }
@@ -28,7 +34,7 @@ footer {
 /* fonts  */
 h1 {
   font-family: adobe-handwriting-ernie, sans-serif;
-  font-size: 8cqw;
+  font-size: 7cqw;
 }
 
 h2 {
@@ -42,11 +48,12 @@ h3 {
   font-family: "the-seasons", sans-serif;
   font-weight: 700;
   font-style: italic;
+  font-size: 3cqw;
 }
 
 h4 {
   font-family: adobe-handwriting-ernie, sans-serif;
-  font-size: 5cqw;
+  font-size: 4cqw;
 }
 
 p {
@@ -59,6 +66,18 @@ p {
 a {
   font-family: "the-seasons", sans-serif;
   font-weight: 700;
+  border-radius: 2px;
+}
+
+/* button "take to side/section" */
+.button {
+  text-decoration: none;
+  font-style: italic;
+  color: var(--black);
+  background-color: var(--dark_beige);
+  width: fit-content;
+  padding: 0.6rem;
+  margin-top: 2cqw;
 }
 
 /********** hover effects **********/
@@ -67,21 +86,23 @@ a {
 }
 
 .grow:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: 1s ease;
 }
 
 /* menu */
 header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--beige);
+  opacity: 0.9;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid black;
   padding-bottom: 1rem;
 }
-
-/* .logo {
-} */
 
 .nav {
   position: relative;
@@ -186,6 +207,12 @@ footer {
     gap: 20px;
   }
 
+  .contact-items,
+  .gotopage-items {
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+
   .box {
     margin: 0;
   }
@@ -195,6 +222,7 @@ footer {
 .gotopage-items {
   margin-top: 1rem;
   line-height: 3cqw;
+  gap: 1rem;
 }
 
 .contact,

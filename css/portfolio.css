@@ -43,6 +43,10 @@ video {
   align-self: center;
 }
 
+.virksomhedssite {
+  padding-top: 100px;
+}
+
 @media (min-width: 900px) {
   .grid_1-1 {
     display: grid;

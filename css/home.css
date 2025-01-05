@@ -1,8 +1,12 @@
 main h1,
-.section1 {
+#section2 {
   display: grid;
   text-align: center;
   justify-items: center;
+}
+
+#section2 {
+  padding-bottom: 160px;
 }
 
 h2,
@@ -11,7 +15,80 @@ p {
   margin: 0;
 }
 
+header {
+  background-color: transparent;
+}
+
+/* hero video */
+.hero {
+  overflow: hidden; /* Hide overflow content */
+  height: 100vh; /* full screen height - in my case it works so other section2 text not overlap  */
+}
+
+.hero-overlay {
+  position: absolute; /* Position on top of hero */
+  /* Align to top-left */
+  top: 0;
+  left: 0;
+  /* Full coverage */
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.hero-image {
+  /* Limit to small viewport height */
+  max-height: 100svh;
+}
+
+.hero-image video {
+  object-fit: cover; /* Fill container*/
+  position: absolute; /* Positioned within container */
+  /* Avoid gaps */
+  min-width: 100%;
+  min-height: 100%;
+  /* No overflow */
+  max-height: 100%;
+  max-width: 100%;
+  /* Keep aspect ratio */
+  height: auto;
+  /* Send behind content */
+  z-index: -1;
+  /* Align to top-left */
+  top: 0;
+  left: 0;
+}
+
+.arrow_down {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.lottie {
+  height: 100px;
+  width: 100px;
+}
+
+@media (min-width: 900px) {
+  .hero_text {
+    position: absolute;
+    top: 10cqw;
+  }
+
+  .lottie {
+    height: 150px;
+    width: 150px;
+  }
+}
+
 /* section 2 */
+#section2 {
+  padding-top: 0;
+}
+
 .grid_1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;

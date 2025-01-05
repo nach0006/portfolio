@@ -12,7 +12,7 @@ html {
 
 body {
   background-color: var(--beige);
-  padding: 3rem;
+  padding: 0 4rem;
   margin: 4cqw;
 }
 
@@ -26,7 +26,7 @@ section {
 
 @media (min-width: 900px) {
   section {
-    padding-top: 200px;
+    padding-top: 280px;
   }
 }
 
@@ -89,15 +89,34 @@ a {
   border-radius: 2px;
 }
 
-/* button "take to side/section" */
+/* button "take to side/section" and "up" */
+.button-container {
+  margin-top: 3cqw;
+  width: fit-content;
+}
+
 .button {
   text-decoration: none;
   font-style: italic;
+  font-size: 1.5cqw;
   color: var(--black);
   background-color: var(--dark_beige);
-  width: fit-content;
   padding: 0.6rem;
-  margin-top: 2cqw;
+}
+
+.arrow_up {
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  bottom: 10px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.up {
+  color: var(--dark_beige);
+  text-decoration: none;
+  font-size: 40px;
 }
 
 /********** hover effects **********/

@@ -36,15 +36,42 @@
     </header>
 
     <main>
-        <h1>Nadia's portfolio</h1>
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-image">
+                <video autoplay muted loop playsinline>
+                    <source src="video/hero.mp4" type="video/mp4">Your browser does not support your video
+                    tag
+                </video>
+            </div>
 
-        <section class="section1">
+            <div class="hero_text">
+                <h1>Nadia's portfolio</h1>
+            </div>
+            <a class="arrow_down" href="#section2">
+                <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+                    type="module"></script>
+                <dotlottie-player class="lottie"
+                    src="https://lottie.host/378aaecb-8f19-4fe4-89e3-67b2bc1242bd/5aaqAB7nqc.lottie"
+                    background="transparent" speed="1" loop autoplay>
+                </dotlottie-player>
+            </a>
+            <div class="arrow_up">
+                <a class="up grow" href="#top" aria-label="Scroll to top of page">
+                    <i class="fa-solid fa-arrow-up-long"></i>
+                </a>
+            </div>
+        </section>
+
+        <section id="section2">
             <p>Hi! I'm</p>
             <h4>Nadia Martín Christiansen</h4>
             <p>Here, you'll find my latest projects, learn about my design journey, and discover more about me as a
                 current multimediadesigner in KEA.
             </p>
-            <a class="button grow" href="about_me.html">Read more about me</a>
+            <div class="button-container grow">
+                <a class="button" href="about_me.html">Read more about me</a>
+            </div>
         </section>
         <section>
             <div>

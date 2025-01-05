@@ -19,6 +19,11 @@ header {
   background-color: transparent;
 }
 
+.menu a.active {
+  color: var(--black);
+  text-decoration: underline;
+}
+
 /* hero video */
 .hero {
   overflow: hidden; /* Hide overflow content */

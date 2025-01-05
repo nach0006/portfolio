@@ -52,7 +52,7 @@ h2 {
   font-family: "the-seasons", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 4cqw;
+  font-size: 3.5cqw;
 }
 
 h3 {
@@ -71,7 +71,7 @@ p {
   font-family: "century-gothic", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 2cqw;
+  font-size: 1.5cqw;
   line-height: 3cqw;
 }
 
@@ -79,7 +79,7 @@ ul {
   font-family: "century-gothic", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 2cqw;
+  font-size: 1.5cqw;
   line-height: 4cqw;
 }
 
@@ -143,6 +143,11 @@ header {
   padding-bottom: 1rem;
 }
 
+.logo {
+  width: 60px;
+  height: 60px;
+}
+
 .nav {
   position: relative;
 }
@@ -171,7 +176,8 @@ header {
 }
 
 .menu a.active {
-  color: var(--turquoise);
+  color: var(--black);
+  text-decoration: underline;
 }
 
 /* burger menu */
@@ -268,7 +274,7 @@ footer {
 .page {
   font-family: "century-gothic", sans-serif;
   font-weight: 400;
-  font-size: 2cqw;
+  font-size: 1.5cqw;
   color: var(--black);
   text-decoration: none;
   display: flex;

@@ -14,8 +14,16 @@
 }
 
 /* sections */
-.section1 {
+.intro {
   padding-top: 0;
+}
+
+#tema1,
+#tema2,
+#tema3,
+#tema4,
+#tema5 {
+  padding-top: 12cqw;
 }
 
 .vertical_img {

@@ -6,8 +6,8 @@
 
 .goto {
   display: flex;
-  align-items: flex-end; /* text to bottom */
-  justify-content: flex-start; /* text to left */
+  align-items: flex-end;
+  justify-content: flex-start;
   background-color: var(--dark_beige);
   width: 90%;
   height: 6cqw;

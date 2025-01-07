@@ -190,7 +190,7 @@ header {
   text-decoration: underline;
 }
 
-/* BURGER MENU */
+/* BURGER MENU (bit of help from chatgpt) */
 .burger {
   display: none;
   flex-direction: column;
@@ -205,7 +205,7 @@ header {
 }
 
 .burger .cross-icon {
-  display: none; /* Hide cross by default */
+  display: none;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 24px;
   color: var(--black);
@@ -220,7 +220,7 @@ header {
     display: none;
     position: fixed;
     top: 0;
-    right: -50%; /* Initially off-screen */
+    right: -50%; /* initially off-screen */
     width: 50%;
     height: 100%;
     background-color: var(--dark_beige);
@@ -242,7 +242,7 @@ header {
   }
 
   .burger.active .cross-icon {
-    display: block; /* Show cross */
+    display: block; /* show cross */
   }
 }
 

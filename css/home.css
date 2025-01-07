@@ -31,10 +31,9 @@ header {
 }
 
 .hero-overlay {
-  position: absolute; /* on top of video */
+  position: absolute;
   top: 0;
   left: 0;
-  /* full coverage */
   width: 100%;
   min-height: 100%;
   background-color: rgba(0, 0, 0, 0.1);
@@ -48,15 +47,12 @@ header {
   z-index: -1;
   top: 0;
   left: 0;
-  object-fit: cover; /* fill container*/
+  object-fit: cover;
   position: absolute;
-  /* avoid gaps */
   min-width: 100%;
   min-height: 100%;
-  /* no overflow */
   max-height: 100%;
   max-width: 100%;
-  /* keep aspect ratio */
   height: auto;
 }
 

@@ -1,8 +1,13 @@
-/* intro */
+/* INTRO */
+.intro {
+  padding-top: 0;
+  padding-bottom: 60px;
+}
+
 .goto {
   display: flex;
-  /* align-items: flex-end;  */
-  justify-content: flex-start; /* Align text to the left */
+  align-items: flex-end; /* text to bottom */
+  justify-content: flex-start; /* text to left */
   background-color: var(--dark_beige);
   width: 90%;
   height: 6cqw;
@@ -12,19 +17,18 @@
   padding: 10px;
   margin-bottom: 10px;
 }
-
-/* sections */
-.intro {
-  padding-top: 0;
-  padding-bottom: 60px;
+.goto h2 {
+  font-size: 3cqw;
 }
 
-#tema1,
-#tema2,
-#tema3,
-#tema4,
-#tema5 {
-  padding-top: 12cqw;
+/* PORTFOLIO */
+.content {
+  display: grid;
+  align-content: center;
+}
+
+h3 {
+  padding-top: 2cqw;
 }
 
 .vertical_img {
@@ -42,10 +46,6 @@ video {
 .right {
   padding-top: 4cqw;
   align-self: center;
-}
-
-.virksomhedssite {
-  padding-top: 100px;
 }
 
 @media (min-width: 900px) {
@@ -79,5 +79,9 @@ video {
   .tema5 {
     display: grid;
     grid-template-rows: 1fr 1fr;
+  }
+
+  .proyect2 {
+    padding-top: 3cqw;
   }
 }

@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Oplev Nadia Martín Christiansens portfolio, der viser kreative projekter inden for webdesign, UX, animation og multimediedesign. Se hendes rejse gennem studier og praktiske projekter.">
-
-
     <title>my work</title>
     <link rel="shortcut icon" href="img/logo.webp" type="image/x-icon">
     <link rel="stylesheet" href="css/general.css">
@@ -21,7 +19,7 @@
 <body>
     <a id="top"></a>
     <header>
-        <a href="#top" class="logo grow">
+        <a href="home.html" class="logo grow">
             <img src="img/logo.webp" alt="Logo">
         </a>
         <nav class="nav">
@@ -72,7 +70,7 @@
         <section id="tema1">
             <h2>1. Introduction week</h2>
             <div class="grid_1-1">
-                <div>
+                <div class="content">
                     <h3>Kea's next designer</h3>
                     <p>Together with my group, we created a video project that showcased our teamwork and
                         creativity.This experience strengthened our communication skills and prepared us for future
@@ -83,14 +81,17 @@
                         <a class="button" href="https://youtu.be/GqJU9XEyIHM" target="_blank">Click here</a>
                     </div>
                 </div>
-                <video controls width="400" class="grow">
-                    <source src="video/keas-næste-designer---team-7.mp4" type="video/mp4">
-                </video>
+                <a href="https://youtu.be/GqJU9XEyIHM" target="_blank">
+                    <video autoplay loop muted width="400" class="grow">
+                        <source src="video/keas-næste-designer---team-7.mp4" type="video/mp4">
+                    </video>
+                </a>
+
             </div>
         </section>
 
         <section class="grid_1-1" id="tema2">
-            <div>
+            <div class="content">
                 <h2>2. Web</h2>
                 <p>In this theme, we focused on learning essential tools for multimedia design.</p>
                 <h3>Study start test</h3>
@@ -116,7 +117,7 @@
         </section>
 
         <section class="grid_1-1" id="tema3">
-            <div>
+            <div class="content">
                 <h2>3. UX</h2>
                 <p>This theme introduced me to the fundamentals of UX design, focusing on the interaction between users
                     and digital interfaces.
@@ -148,7 +149,7 @@
         </section>
 
         <section class="grid_1-1" id="tema4">
-            <div>
+            <div class="content">
                 <h2>4. Animation</h2>
                 <h3>Game website</h3>
                 <p>In this theme, I learned JavaScript and CSS animations to create the Splash Sprint game. I designed
@@ -177,35 +178,20 @@
         </section>
 
         <section id="tema5">
-            <h2>5. Content</h2>
             <div class="tema5">
                 <div class="grid_1-1">
-                    <div class="left">
-                        <a href="http://nadiamc.dk/kea/05_indhold/01_passionsite/index.html" target="_blank">
-                            <img class="horizontal_img grow" src="img/02_portfolio/05_passionsite-h.webp"
-                                alt="Horizontal view of passion website">
-                            <img class="vertical_img grow" src="img/02_portfolio/05_passionsite-v.webp"
-                                alt="Vertical view of passion website">
-                        </a>
-                    </div>
-
-                    <div>
+                    <div class="content">
+                        <h2>5. Content</h2>
                         <h3>Passion website</h3>
                         <p>I created a passion site that showcases a person and their interests. Using Adobe Premiere
-                            Pro
-                            and
-                            Audition, I produced video content and combined it with photography. <br><br>
+                            Pro and Audition, I produced video content and combined it with photography. <br><br>
 
                             The project involved pre-production planning, shooting with a smartphone and external
-                            microphone,
-                            and editing the video. I also applied techniques for creating animated graphics and
-                            optimized
-                            the
-                            layout using the skills I learned from previous themes. <br><br>
+                            microphone, and editing the video. I also applied techniques for creating animated graphics
+                            and optimized the layout using the skills I learned from previous themes. <br><br>
 
                             This project allowed me to explore content creation, organization, and video editing,
-                            helping me
-                            communicate a subject's passion effectively.
+                            helping me communicate a subject's passion effectively.
                         </p>
                         <div class="button-container grow">
                             <a class="button" href="http://nadiamc.dk/kea/05_indhold/01_passionsite/index.html"
@@ -213,36 +199,30 @@
                                 here</a>
                         </div>
                     </div>
-                </div>
-                <div class="grid_1-1">
-                    <div class="right virksomhedssite">
-                        <a href="https://nadiamc.dk/kea/05_indhold/02_virksomhedssite/vaerksted_v2/index.html"
-                            target="_blank">
-                            <img class="horizontal_img grow" src="img/02_portfolio/05_virksomhedssite-h.webp"
-                                alt="Topic website">
-                            <img class="vertical_img grow" src="img/02_portfolio/05_virksomhedssite-v.webp"
-                                alt="Topic website">
+                    <div class="right">
+                        <a href="http://nadiamc.dk/kea/05_indhold/01_passionsite/index.html" target="_blank">
+                            <img class="horizontal_img grow" src="img/02_portfolio/05_passionsite-h.webp"
+                                alt="Horizontal view of passion website">
+                            <img class="vertical_img grow" src="img/02_portfolio/05_passionsite-v.webp"
+                                alt="Vertical view of passion website">
                         </a>
                     </div>
-                    <div id="virksomhedssite">
+                </div>
+                <div class="grid_1-1 proyect2">
+                    <div class="content" id="virksomhedssite">
                         <h3>Business website</h3>
                         <p>I worked in a group to redesign a website for a company. This project closely resembled the
-                            structure
-                            of the upcoming exam, focusing on redesigning a business site with new text, photos,
-                            animations,
-                            and
-                            videos.<br><br>
+                            structure of the upcoming exam, focusing on redesigning a business site with new text,
+                            photos, animations, and videos.<br><br>
 
                             We applied content production principles to the business context, ensuring the website was
                             user-friendly and engaging. I applied my skills in Adobe Premiere Pro, Photoshop, After
-                            Effects,
-                            and
-                            frontend development tools like HTML, CSS, and JavaScript to optimize the site's design and
+                            Effects, and frontend development tools like HTML, CSS, and JavaScript to optimize the
+                            site's design and
                             functionality. <br><br>
 
                             The process gave me valuable experience in project organization, team collaboration, and
-                            applying a
-                            structured design approach in a real-world context.
+                            applying a structured design approach in a real-world context.
                         </p>
                         <div class="button-container grow">
                             <a class="button"
@@ -250,6 +230,15 @@
                                 target="_blank">Click
                                 here</a>
                         </div>
+                    </div>
+                    <div class="left virksomhedssite">
+                        <a href="https://nadiamc.dk/kea/05_indhold/02_virksomhedssite/vaerksted_v2/index.html"
+                            target="_blank">
+                            <img class="horizontal_img grow" src="img/02_portfolio/05_virksomhedssite-h.webp"
+                                alt="Topic website">
+                            <img class="vertical_img grow" src="img/02_portfolio/05_virksomhedssite-v.webp"
+                                alt="Topic website">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -262,21 +251,19 @@
             <div>
                 <h2>Feel free to contact me</h2>
                 <div class="contact-items">
-                    <div>
-                        <div>
-                            <a href="mailto:nadiamartinchristiansen@gmail.com" target="_blank" class="contact">
-                                <i class="fa-solid fa-envelope"></i>
-                                <p>gmail: nadiamartinchristiansen@gmail.com</p>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://www.linkedin.com/in/nadia-mart%C3%ADn-christiansen" target="_blank"
-                                class="contact">
-                                <i class="fa-brands fa-linkedin"></i>
-                                <p>linkedin: Nadia Martín Christiansen</p>
-                            </a>
-                        </div>
-                    </div>
+                    <a href="https://www.instagram.com/nadiaa.martiin/" class="contact" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                        <p>instagram: nadiaa.martiin</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nadia-mart%C3%ADn-christiansen" class="contact"
+                        target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <p>linkedin: Nadia Martín Christiansen</p>
+                    </a>
+                    <a href="mailto:nadiamartinchristiansen@gmail.com" class="contact" target="_blank">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p>gmail: nadiamartinchristiansen@gmail.com</p>
+                    </a>
                 </div>
             </div>
             <div class="box">

@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Learn more about Nadia Martín, a Multimedia Design student from Lanzarote, Spain, now based in Copenhagen. Discover her values, education, and favorite projects.">
-
     <title>about me</title>
     <link rel="shortcut icon" href="img/logo.webp" type="image/x-icon">
     <link rel="stylesheet" href="css/general.css">
@@ -20,7 +19,7 @@
 <body>
     <a id="top"></a>
     <header>
-        <a href="#top" class="logo grow">
+        <a href="home.html" class="logo grow">
             <img src="img/logo.webp" alt="Logo">
         </a>
         <nav class="nav">
@@ -41,11 +40,11 @@
     <main>
         <section class="grid_1-1 intro">
             <h1>About me</h1>
-            <img class="grow" src="img/3_about_me/full.webp" alt="Me">
+            <img class="full grow" src="img/3_about_me/full.webp" alt="Me">
         </section>
-        <section class="cv">
+        <section>
             <div class="grid_1-1">
-                <div>
+                <div class="content">
                     <h2>Nadia Martín</h2>
                     <h3>General info</h3>
                     <p>16 / February / 2005 <br><br>
@@ -75,35 +74,73 @@
                 <div>
                     <h3>Education</h3>
                     <ul>
-                        <li>Primary in <a href="https://www3.gobiernodecanarias.org/medusa/edublog/ceipcostateguise/"
+                        <li>Primary education at <a
+                                href="https://www3.gobiernodecanarias.org/medusa/edublog/ceipcostateguise/"
                                 target="_blank">CEIP Costa
-                                Teguise</a>
+                                Teguise</a> - 2011-2017
                         </li>
-                        <li>Secondary and Bachillerato degree in <a
+                        <li>Secondary education and Bachillerato degree at <a
                                 href="https://www3.gobiernodecanarias.org/medusa/edublog/iescostateguise/"
                                 target="_blank">IES Costa
-                                Teguise</a>
+                                Teguise</a> - 2017-2023
                         </li>
-                        <li>Currently studying Multimediadesign in <a
+                        <li>Currently pursuing a degree in Multimedia Design at <a
                                 href="https://kea.dk/uddannelser/erhvervsakademi/multimediedesigner" target="_blank">KEA
                                 (Københavns Erhversakademi)</a> - 2024-2026
                         </li>
                     </ul>
                 </div>
             </div>
+            <div>
+                <h3 class="line">Skills</h3>
+                <hr>
+                <ul class="skills">
+                    <li>Web development</li>
+                    <li>Graphic design</li>
+                    <li>Animation</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="line">Tools</h3>
+                <hr>
+                <ul class="tools">
+                    <li class="adobe">Adobe pack
+                        <ul class="dropdown">
+                            <li>After Effects</li>
+                            <li>Audition</li>
+                            <li>Illustrator</li>
+                            <li>Premiere Pro</li>
+                        </ul>
+                    </li>
+                    <li>Canva</li>
+                    <li>Figma</li>
+                    <li class="vscode">VsCode
+                        <ul class="dropdown">
+                            <li>Html</li>
+                            <li>Css</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </li>
+                    <li>Filezilla</li>
+                </ul>
+            </div>
             <div class="arrow_up">
                 <a class="up grow" href="#top" aria-label="Scroll to top of page">
                     <i class="fa-solid fa-arrow-up-long"></i>
                 </a>
             </div>
+
+            <div class="lanzarote-container">
+                <div class="lanzarote">
+                    <img src="img/3_about_me/lanzarote.webp" alt="my_work" class="image">
+                    <div class="overlay-lanza">
+                        <h2 class="text-lanza">Lanzarote</h2>
+                    </div>
+                </div>
+                <h3>Lanzarote</h3>
+            </div>
         </section>
 
-        <div class="lanzarote">
-            <img src="img/3_about_me/lanzarote.webp" alt="my_work" class="image">
-            <div class="overlay-lanza">
-                <div class="text-lanza">Lanzarote</div>
-            </div>
-        </div>
 
         <section>
             <h2>Favorite proyects</h2>
@@ -119,13 +156,12 @@
                         <div class="text">Game</div>
                     </div>
                 </a>
-                <a href="portfolio.html#" class="goto grow">
+                <a href="portfolio.html#tema5" class="goto grow">
                     <div class="overlay">
                         <div class="text">Business website</div>
                     </div>
                 </a>
             </div>
-
         </section>
     </main>
 
@@ -135,13 +171,18 @@
             <div>
                 <h2>Feel free to contact me</h2>
                 <div class="contact-items">
-                    <a href="mailto:nadiamartinchristiansen@gmail.com" class="contact">
-                        <i class="fa-solid fa-envelope"></i>
-                        <p>gmail: nadiamartinchristiansen@gmail.com</p>
+                    <a href="https://www.instagram.com/nadiaa.martiin/" class="contact" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                        <p>instagram: nadiaa.martiin</p>
                     </a>
-                    <a href="https://www.linkedin.com/in/nadia-mart%C3%ADn-christiansen" class="contact">
-                        <i class="fa-brands fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/nadia-mart%C3%ADn-christiansen" class="contact"
+                        target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
                         <p>linkedin: Nadia Martín Christiansen</p>
+                    </a>
+                    <a href="mailto:nadiamartinchristiansen@gmail.com" class="contact" target="_blank">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p>gmail: nadiamartinchristiansen@gmail.com</p>
                     </a>
                 </div>
             </div>

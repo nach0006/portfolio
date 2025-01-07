@@ -1,20 +1,4 @@
-main h1,
-#section2 {
-  display: grid;
-  text-align: center;
-  justify-items: center;
-}
-
-#section2 {
-  padding-bottom: 160px;
-}
-
-h2,
-h4,
-p {
-  margin: 0;
-}
-
+/* MENU */
 header {
   background-color: transparent;
 }
@@ -24,46 +8,59 @@ header {
   text-decoration: underline;
 }
 
+/* INTRO */
+@media (max-width: 900px) {
+  h1 {
+    font-size: 10cqw;
+  }
+}
+
+/* divide h1 left-right smaller screens */
+@media (max-width: 714px) {
+  .right-text {
+    text-align: right;
+    width: 100%;
+    display: inline-block;
+  }
+}
+
 /* hero video */
 .hero {
-  overflow: hidden; /* Hide overflow content */
-  height: 100vh; /* full screen height - in my case it works so other section2 text not overlap  */
+  overflow: hidden;
+  height: 100vh;
 }
 
 .hero-overlay {
-  position: absolute; /* Position on top of hero */
-  /* Align to top-left */
+  position: absolute; /* on top of video */
   top: 0;
   left: 0;
-  /* Full coverage */
+  /* full coverage */
   width: 100%;
   min-height: 100%;
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.hero-image {
-  /* Limit to small viewport height */
+.hero-video {
   max-height: 100svh;
 }
 
-.hero-image video {
-  object-fit: cover; /* Fill container*/
-  position: absolute; /* Positioned within container */
-  /* Avoid gaps */
-  min-width: 100%;
-  min-height: 100%;
-  /* No overflow */
-  max-height: 100%;
-  max-width: 100%;
-  /* Keep aspect ratio */
-  height: auto;
-  /* Send behind content */
+.hero-video video {
   z-index: -1;
-  /* Align to top-left */
   top: 0;
   left: 0;
+  object-fit: cover; /* fill container*/
+  position: absolute;
+  /* avoid gaps */
+  min-width: 100%;
+  min-height: 100%;
+  /* no overflow */
+  max-height: 100%;
+  max-width: 100%;
+  /* keep aspect ratio */
+  height: auto;
 }
 
+/* lottie */
 .arrow_down {
   position: absolute;
   bottom: 20px;
@@ -87,17 +84,45 @@ header {
     height: 150px;
     width: 150px;
   }
+
+  h1 {
+    margin-top: 0;
+  }
 }
 
-/* section 2 */
-#section2 {
+/* SECTION 1 */
+@media (max-width: 900px) {
+  section {
+    padding-top: 0;
+  }
+}
+
+#section1 {
+  display: grid;
+  text-align: center;
+  justify-items: center;
   padding-top: 0;
+  padding-bottom: 100px;
 }
 
 .grid_1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 55px;
+}
+
+@media (min-width: 900px) {
+  #section1 {
+    padding-bottom: 160px;
+    padding-top: 40px;
+  }
+}
+
+/* SECTION 2 */
+.gotopage_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .gotopage {
@@ -131,4 +156,10 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+@media (min-width: 900px) {
+  h3 {
+    display: none;
+  }
 }

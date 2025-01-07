@@ -1,18 +1,27 @@
-.grid_1-1 {
-  padding-top: 4cqw;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 55px;
+/* INTRO */
+.intro {
+  padding-top: 0;
 }
 
-.cv {
-  padding-top: 2cqw;
+.full {
+  padding-top: 20px;
+}
+
+/* CV */
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5cqw;
 }
 
 .portrait {
   order: -1;
   align-self: center;
   grid-column: 1/2;
+}
+
+.content {
+  align-content: center;
 }
 
 .languages {
@@ -33,38 +42,62 @@ ul {
 
 li a:hover {
   font-family: adobe-handwriting-ernie, sans-serif;
-  font-size: 0.8rem;
+  font-size: 1.5cqw;
 }
 
-.goto {
+.skills,
+.tools {
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-start; /* Align text to the left */
-  background-color: var(--dark_beige);
-  height: 6cqw;
-  text-decoration: none;
-  color: var(--black);
-  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+  padding-bottom: 2rem;
+}
+
+hr {
+  border-top: 0.5px solid var(--black);
+}
+
+/* adobepack dropdown */
+.adobe,
+.vscode {
+  position: relative; /* required for dropdown */
   padding: 10px;
-  margin-bottom: 10px;
+  cursor: pointer;
 }
 
-.text {
-  font-size: 1.8cqw;
+.dropdown {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none; /* hidden by default */
+  position: absolute; /* positions dropdown relative to parent */
+  left: 0;
+  top: 100%; /* appears below adobe */
+  background-color: var(--dark_beige);
+  border: 1px solid var(--dark_beige);
+  z-index: 10;
+  cursor: default;
 }
 
-@media (min-width: 900px) {
-  .grid_1-1-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
-  }
+.dropdown li {
+  padding: 8px 12px;
+  white-space: nowrap;
+}
 
-  .goto {
-    height: 20cqw;
-    align-items: center;
-    justify-content: center;
-  }
+.adobe:hover .dropdown,
+.vscode:hover .dropdown {
+  display: block; /* show dropdown on hover */
+}
+
+.dropdown li:hover {
+  background-color: var(--beige);
+}
+
+/* LANZAROTE IMG */
+.lanzarote-container {
+  padding-top: 5cqw;
 }
 
 .lanzarote {
@@ -97,4 +130,51 @@ li a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.lanzarote-container h3 {
+  display: grid;
+  justify-content: center;
+}
+
+@media (min-width: 900px) {
+  .lanzarote-container h3 {
+    display: none;
+  }
+}
+
+/* FAV PROYECTS */
+.grid_1-1-1 {
+  padding-top: 2.5cqw;
+}
+
+.goto {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  background-color: var(--dark_beige);
+  height: 6cqw;
+  text-decoration: none;
+  color: var(--black);
+  position: relative;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.text {
+  font-size: 1.8cqw;
+}
+
+@media (min-width: 900px) {
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+
+  .goto {
+    height: 20cqw;
+    align-items: center;
+    justify-content: center;
+  }
 }

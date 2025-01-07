@@ -63,7 +63,6 @@ hr {
 .adobe,
 .vscode {
   position: relative; /* required for dropdown */
-  padding: 10px;
   cursor: pointer;
 }
 
